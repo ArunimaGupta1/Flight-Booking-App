@@ -1,0 +1,42 @@
+.booking-list-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .booking-list-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .booking-list-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .booking-list-item p {
+    margin: 5px 0;
+  }
+  
+  .booking-list-item button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .booking-list-item button:hover {
+    background-color: #0056b3;
+  }
+  
+  .no-flights-message {
+    font-style: italic;
+    color: #888;
+  }
+  

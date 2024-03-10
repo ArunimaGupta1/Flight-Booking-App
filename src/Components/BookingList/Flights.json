@@ -1,0 +1,80 @@
+[{
+    "id":1,
+    "flight_no":"6E342",
+    "departure":"Bangalore",
+    "arrival":"Delhi",
+    "time": "17:05",
+    "date":"2024-03-06"
+},
+{
+    "id":2,
+    "flight_no":"6E535",
+    "departure":"Bangalore",
+    "arrival":"Kolkata",
+    "time": "7:05",
+    "date":"2024-03-05"
+},
+{
+    "id":3,
+    "flight_no":"6E782",
+    "departure":"Kolkata",
+    "arrival":"Delhi",
+    "time": "20:15",
+    "date":"2024-03-14"
+},
+{
+    "id":4,
+    "flight_no":"6E903",
+    "departure":"Delhi",
+    "arrival":"Chennai",
+    "time": "18:05",
+    "date":"2024-03-13"
+},
+{
+    "id":5,
+    "flight_no":"6E320",
+    "departure":"Chennai",
+    "arrival":"Delhi",
+    "time": "17:05",
+    "date":"2024-03-11"
+},
+{
+    "id":6,
+    "flight_no":"6E256",
+    "departure":"Kolkata",
+    "arrival":"Mumbai",
+    "time": "17:05",
+    "date":"2024-03-15"
+},
+{
+    "id":7,
+    "flight_no":"6E312",
+    "departure":"Mumbai",
+    "arrival":"Delhi",
+    "time": "17:05",
+    "date":"2024-03-16"
+},
+{
+    "id":8,
+    "flight_no":"6E343",
+    "departure":"Bangalore",
+    "arrival":"Mumbai",
+    "time": "17:05",
+    "date":"2024-03-19"
+},
+{
+    "id":9,
+    "flight_no":"6E672",
+    "departure":"Delhi",
+    "arrival":"Chennai",
+    "time": "9:45",
+    "date":"2024-03-13"
+},
+{
+    "id":10,
+    "flight_no":"6E562",
+    "departure":"Kolkata",
+    "arrival":"Mumbai",
+    "time": "14:25",
+    "date":"2024-03-12"
+}]
