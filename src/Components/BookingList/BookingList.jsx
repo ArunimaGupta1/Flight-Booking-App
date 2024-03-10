@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import flights from './Flights.json';
 import styles from './BookingList.module.css';
 
-function BookingList({ date, from, to }) {
+function BookingList({ date, from, to, setFlightNo,setCurrentStep,setTime }) {
     const filteredFlights = useMemo(() => {
         return flights.filter(flight => {
             return (
@@ -13,6 +13,7 @@ function BookingList({ date, from, to }) {
             );
         });
     }, [date, from, to]);
+
 
     return (
         <div className={styles['booking-list-container']}>
@@ -26,7 +27,11 @@ function BookingList({ date, from, to }) {
                             <p>Departure: {flight.departure}</p>
                             <p>Arrival: {flight.arrival}</p>
                             <p>Time: {flight.time}</p>
-                            <button>Book Now</button>
+                            <button onClick={() =>{
+                                setFlightNo(flight.flight_no)
+                                setCurrentStep('Confirmation')
+                                setTime(flight.time)
+                            }}>Book Now</button>
                         </li>
                     ))}
                 </ul>
@@ -40,7 +45,10 @@ function BookingList({ date, from, to }) {
 BookingList.propTypes = {
     date: PropTypes.string.isRequired,
     from: PropTypes.string.isRequired,
-    to: PropTypes.string.isRequired
+    to: PropTypes.string.isRequired,
+    setCurrentStep: PropTypes.func.isRequired,
+    setTime: PropTypes.func.isRequired,
+    setFlightNo:PropTypes.func.isRequired
 };
 
 export default BookingList;
