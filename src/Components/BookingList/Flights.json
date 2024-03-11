@@ -77,4 +77,12 @@
     "arrival":"Mumbai",
     "time": "14:25",
     "date":"2024-03-12"
+},
+{
+    "id":11,
+    "flight_no":"6E362",
+    "departure":"Mumbai",
+    "arrival":"Chennai",
+    "time": "18:25",
+    "date":"2024-03-31"
 }]

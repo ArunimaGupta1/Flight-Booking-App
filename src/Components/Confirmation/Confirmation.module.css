@@ -1,0 +1,52 @@
+.confirmation-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .confirmation-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .confirmation-info {
+    margin-bottom: 10px;
+  }
+  
+  .confirmation-form {
+    margin-bottom: 20px;
+  }
+  
+  .confirmation-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .confirmation-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .confirmation-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .confirmation-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .confirmation-button:focus {
+    outline: none;
+  }
+  
