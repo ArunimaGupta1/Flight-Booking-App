@@ -26,7 +26,7 @@ function App() {
     return <Confirmation date={date} from={from} to={to} time={time} flightNo={flightNo} setCurrentStep={setCurrentStep}/>
   }
   else if(currentStep==="Thank-You"){
-    return <ThankYou/>
+    return <ThankYou date={date} from={from} to={to} time={time} flightNo={flightNo}/>
   }
 
   return (
