@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { DevTool } from "@hookform/devtools";
 import styles from "./Confirmation.module.css";
 
-function Confirmation({ date, from, to, flightNo, time, setCurrentStep }) {
+function Confirmation({ date, from, to, flightNo, time, setCurrentStep,setFirstname }) {
   const form = useForm();
   const { register, control, handleSubmit } = form;
 
@@ -26,7 +26,7 @@ function Confirmation({ date, from, to, flightNo, time, setCurrentStep }) {
 
       <form className={styles["confirmation-form"]} onSubmit={handleSubmit(onSubmit)}>
         <label htmlFor="firstname" className={styles["confirmation-label"]}>First Name</label>
-        <input type="text" name="firstname" {...register("firstname")} className={styles["confirmation-input"]} />
+        <input type="text" name="firstname" {...register("firstname")} onChange={(e)=>setFirstname(e.target.value)} className={styles["confirmation-input"]} />
 
         <label htmlFor="lastname" className={styles["confirmation-label"]}>Last Name</label>
         <input type="text" name="lastname" {...register("lastname")} className={styles["confirmation-input"]} />
@@ -49,6 +49,7 @@ Confirmation.propTypes = {
   flightNo: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
   setCurrentStep: PropTypes.func.isRequired,
+  setFirstname: PropTypes.func.isRequired
 };
 
 export default Confirmation;

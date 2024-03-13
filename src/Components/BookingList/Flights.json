@@ -85,4 +85,12 @@
     "arrival":"Chennai",
     "time": "18:25",
     "date":"2024-03-31"
+},
+{
+    "id":12,
+    "flight_no":"6E262",
+    "departure":"Delhi",
+    "arrival":"Chennai",
+    "time": "18:25",
+    "date":"2024-03-31"
 }]

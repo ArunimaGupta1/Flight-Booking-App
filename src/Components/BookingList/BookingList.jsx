@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import flights from './Flights.json';
 import styles from './BookingList.module.css';
 
+
 function BookingList({ date, from, to, setFlightNo,setCurrentStep,setTime }) {
     const filteredFlights = useMemo(() => {
         return flights.filter(flight => {

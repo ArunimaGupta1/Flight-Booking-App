@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function ThankYou({date,from,to,time,flightNo}) {
+function ThankYou({date,from,to,time,flightNo,firstname}) {
   const generatePNR = () => {
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
     let result = '';
@@ -17,6 +17,7 @@ function ThankYou({date,from,to,time,flightNo}) {
   };
   return (
     <div>
+      <p>Dear {firstname}</p>
       <p>Thank you</p>
       <p>Your ticket is generated from {from} to {to} at {time} on {date} via flight {flightNo}</p>
       <p>The PNR number is {generatePNR()}</p>
@@ -30,6 +31,7 @@ ThankYou.propTypes = {
   to: PropTypes.string.isRequired,
   flightNo: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
+  firstname: PropTypes.string.isRequired
 };
 
 export default ThankYou
