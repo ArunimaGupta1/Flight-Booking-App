@@ -1,0 +1,10 @@
+/* Styling for Header component */
+.header-container {
+    text-align: center; /* Center align the content */
+  }
+  
+  .header-image {
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    height: 250px; /* Maintain aspect ratio */
+    width:250px;
+  }

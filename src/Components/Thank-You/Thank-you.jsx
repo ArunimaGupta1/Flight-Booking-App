@@ -19,7 +19,7 @@ function ThankYou({date,from,to,time,flightNo,firstname}) {
     <div>
       <p>Dear {firstname}</p>
       <p>Thank you</p>
-      <p>Your ticket is generated from {from} to {to} at {time} on {date} via flight {flightNo}</p>
+      <p>Your ticket is generated from {from} to {to} at {time} on {date} via flight {flightNo}.</p>
       <p>The PNR number is {generatePNR()}</p>
     </div>
   )

@@ -1,12 +1,12 @@
-import pic from '../../assets/pic.png';
+import pic from '../../assets/pic.jpg';
+import styles from "./Header.module.css";
 
 function Header() {
   return (
-    <div>
-      <img src={pic} alt='pic'></img>
-      <br></br>
-      <br></br>
-    </div>
+    <div className={styles["header-container"]}>
+    <img src={pic} alt='pic' className={styles["header-image"]} />
+    <br /><br />
+  </div>
   )
 }
 
